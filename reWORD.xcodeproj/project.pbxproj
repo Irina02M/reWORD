@@ -7,23 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71351DF36B0B7226BCDCECCF /* Pods_reWORD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E769AA1A97B3D359A99C425 /* Pods_reWORD.framework */; };
 		CED728512A7155CF00715EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED728502A7155CF00715EFD /* AppDelegate.swift */; };
 		CED728532A7155CF00715EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED728522A7155CF00715EFD /* SceneDelegate.swift */; };
-		CED728552A7155CF00715EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED728542A7155CF00715EFD /* ViewController.swift */; };
+		CED728552A7155CF00715EFD /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED728542A7155CF00715EFD /* ToDoListViewController.swift */; };
 		CED728582A7155CF00715EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED728562A7155CF00715EFD /* Main.storyboard */; };
 		CED7285A2A7155D100715EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED728592A7155D100715EFD /* Assets.xcassets */; };
 		CED7285D2A7155D100715EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED7285B2A7155D100715EFD /* LaunchScreen.storyboard */; };
+		CED728872A754D0200715EFD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED728862A754D0200715EFD /* Item.swift */; };
+		CED7288E2A76AF6400715EFD /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED7288D2A76AF6400715EFD /* SwipeCellKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CED7284D2A7155CF00715EFD /* reWORD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reWORD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E769AA1A97B3D359A99C425 /* Pods_reWORD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reWORD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45AD41F8726D516FB8D12DFF /* Pods-reWORD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reWORD.debug.xcconfig"; path = "Target Support Files/Pods-reWORD/Pods-reWORD.debug.xcconfig"; sourceTree = "<group>"; };
+		A391CE850C75D46529389B2A /* Pods-reWORD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reWORD.release.xcconfig"; path = "Target Support Files/Pods-reWORD/Pods-reWORD.release.xcconfig"; sourceTree = "<group>"; };
+		CED7284D2A7155CF00715EFD /* To-do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED728502A7155CF00715EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED728522A7155CF00715EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED728542A7155CF00715EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED728542A7155CF00715EFD /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		CED728572A7155CF00715EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED728592A7155D100715EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED7285C2A7155D100715EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED7285E2A7155D100715EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED728862A754D0200715EFD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED7288E2A76AF6400715EFD /* SwipeCellKit in Frameworks */,
+				71351DF36B0B7226BCDCECCF /* Pods_reWORD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B74B2250A844EE6C8796AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45AD41F8726D516FB8D12DFF /* Pods-reWORD.debug.xcconfig */,
+				A391CE850C75D46529389B2A /* Pods-reWORD.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CED728442A7155CF00715EFD = {
 			isa = PBXGroup;
 			children = (
 				CED7284F2A7155CF00715EFD /* reWORD */,
 				CED7284E2A7155CF00715EFD /* Products */,
+				06B74B2250A844EE6C8796AB /* Pods */,
+				E056D2E7E4E2F19647C25968 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CED7284E2A7155CF00715EFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CED7284D2A7155CF00715EFD /* reWORD.app */,
+				CED7284D2A7155CF00715EFD /* To-do List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +76,56 @@
 		CED7284F2A7155CF00715EFD /* reWORD */ = {
 			isa = PBXGroup;
 			children = (
+				CED728882A754D1C00715EFD /* Data Model */,
 				CED728502A7155CF00715EFD /* AppDelegate.swift */,
 				CED728522A7155CF00715EFD /* SceneDelegate.swift */,
-				CED728542A7155CF00715EFD /* ViewController.swift */,
-				CED728562A7155CF00715EFD /* Main.storyboard */,
-				CED728592A7155D100715EFD /* Assets.xcassets */,
-				CED7285B2A7155D100715EFD /* LaunchScreen.storyboard */,
+				CED728892A754D2F00715EFD /* Controllers */,
+				CED7288A2A754D6500715EFD /* Views */,
+				CED7288B2A754D8000715EFD /* Supporting Files */,
 				CED7285E2A7155D100715EFD /* Info.plist */,
 			);
 			path = reWORD;
+			sourceTree = "<group>";
+		};
+		CED728882A754D1C00715EFD /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED728862A754D0200715EFD /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		CED728892A754D2F00715EFD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CED728542A7155CF00715EFD /* ToDoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CED7288A2A754D6500715EFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED728562A7155CF00715EFD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CED7288B2A754D8000715EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED7285B2A7155D100715EFD /* LaunchScreen.storyboard */,
+				CED728592A7155D100715EFD /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E056D2E7E4E2F19647C25968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E769AA1A97B3D359A99C425 /* Pods_reWORD.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,17 +135,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED728612A7155D100715EFD /* Build configuration list for PBXNativeTarget "reWORD" */;
 			buildPhases = (
+				B50AA204783B153FA91E9474 /* [CP] Check Pods Manifest.lock */,
 				CED728492A7155CF00715EFD /* Sources */,
 				CED7284A2A7155CF00715EFD /* Frameworks */,
 				CED7284B2A7155CF00715EFD /* Resources */,
+				F80BF61260F3648824F67CEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = reWORD;
+			packageProductDependencies = (
+				CED7288D2A76AF6400715EFD /* SwipeCellKit */,
+			);
 			productName = reWORD;
-			productReference = CED7284D2A7155CF00715EFD /* reWORD.app */;
+			productReference = CED7284D2A7155CF00715EFD /* To-do List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,6 +177,9 @@
 				Base,
 			);
 			mainGroup = CED728442A7155CF00715EFD;
+			packageReferences = (
+				CED7288C2A76AF6400715EFD /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+			);
 			productRefGroup = CED7284E2A7155CF00715EFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,12 +202,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B50AA204783B153FA91E9474 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reWORD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80BF61260F3648824F67CEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reWORD/Pods-reWORD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reWORD/Pods-reWORD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reWORD/Pods-reWORD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CED728492A7155CF00715EFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED728552A7155CF00715EFD /* ViewController.swift in Sources */,
+				CED728872A754D0200715EFD /* Item.swift in Sources */,
+				CED728552A7155CF00715EFD /* ToDoListViewController.swift in Sources */,
 				CED728512A7155CF00715EFD /* AppDelegate.swift in Sources */,
 				CED728532A7155CF00715EFD /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +394,7 @@
 		};
 		CED728622A7155D100715EFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45AD41F8726D516FB8D12DFF /* Pods-reWORD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,7 +413,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Irina1.reWORD;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "To-do List";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,6 +422,7 @@
 		};
 		CED728632A7155D100715EFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A391CE850C75D46529389B2A /* Pods-reWORD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,7 +441,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Irina1.reWORD;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "To-do List";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED7288C2A76AF6400715EFD /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED7288D2A76AF6400715EFD /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED7288C2A76AF6400715EFD /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CED728452A7155CF00715EFD /* Project object */;
 }
