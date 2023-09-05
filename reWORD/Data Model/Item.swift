@@ -8,6 +8,7 @@
 import Foundation
 
 class Item: Codable {
-    var title: String = ""
+    var word: String = ""
+    var meaning: String = ""
     var done: Bool = false
 }
